@@ -186,7 +186,7 @@ Response:
       "id": 1,
       "project_name": "unnamed project 1",
       "address": "LA",
-      "updated_at": '2017-09-09 12:12'
+      "updated_at": "2017-09-09 12:12"
     }
   ]
 }
@@ -219,10 +219,10 @@ POST /project/{id}
 
 Body:
 {
-  "thumb": "abc"
+  "thumb": "abc",
   "type": "residential",
   "name": "unamed project 1",
-  "address": "LA"
+  "address": "LA",
   "component": "123",
   "roofs": [
     {
@@ -253,7 +253,7 @@ Response:
 ##### 初始化项目接口
 
 ```json
-GET /projects/init
+GET /projects/{id}/init
 
 Response:
 {
@@ -314,15 +314,21 @@ Response:
 
 ##### 常用设备接口
 
+* type 有三种类型：module，inverter，racking
+
 ```json
-GET /equipments
+GET /equipments?type=module
 
 Response:
 {
   "data": [
     {
+      "id": "123",
       "manufacturer": "11111",
-      "model": "1213213"
+      "equipment_model": "1213213",
+      "power": "1222",
+      "length": "1111",
+      "wide": "200"
     }
   ]
 }
