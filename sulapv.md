@@ -314,24 +314,52 @@ Response:
 
 ##### 常用设备接口
 
-* type 有三种类型：module，inverter，racking
-
 ```json
-GET /equipments?type=module
+GET /equipments
 
 Response:
 {
-  "data": [
-    {
-      "id": "123",
-      "manufacturer": "11111",
-      "equipment_model": "1213213",
-      "power": "1222",
-      "length": "1111",
-      "wide": "200"
-    }
-  ]
+  "data": {
+    "module": [
+      {
+        "id": 2,
+        "manufacturer": "测试",
+        "equipment_model": "测试",
+        "power": "100",
+        "length": "100",
+        "wide": "100"
+      },
+      {
+        "id": 4,
+        "manufacturer": "测试",
+        "equipment_model": "测试",
+        "power": "100",
+        "length": "100",
+        "wide": "100"
+      }
+    ],
+    "inverter": [],
+    "racking": [
+      {
+        "id": 6,
+        "manufacturer": "测试",
+        "equipment_model": "测试",
+        "power": "100",
+        "length": "100",
+        "wide": "100"
+      },
+      {
+        "id": 7,
+        "manufacturer": "测试",
+        "equipment_model": "测试",
+        "power": "100",
+        "length": "100",
+        "wide": "100"
+      }
+    ]
+  }
 }
+
 ```
 
 ##### project列表接口
@@ -727,15 +755,69 @@ Response:
 {
   "data": {
     "file": {
-      "file_name": "1111",
-      "file_url": "11",
-      "file_size": "1.2",
-      "created_at": '2017-09-14 14:21'
+      "file_name": "测试文件名",
+      "file_url": "a.zip",
+      "file_size": "2.3",
+      "created_at": "2017-09-09 12:12:23"
     },
-    "message": ""
+    "message": [
+      {
+        "id": 1,
+        "name": "测试1",
+        "message": "测试信息",
+        "images": [
+          "1.jpg",
+          "2.jpg",
+          "3.jpg"
+        ],
+        "created_at": "2017-12-12 10:12:20"
+      },
+      {
+        "id": 2,
+        "name": "测试1",
+        "message": "测试信息",
+        "images": [
+          "1.jpg",
+          "2.jpg",
+          "3.jpg"
+        ],
+        "created_at": "2017-12-12 10:12:20"
+      },
+      {
+        "id": 3,
+        "name": "panxianhai",
+        "message": "测试信息",
+        "images": [
+          "public\/ndOBKW7urPRc5ocSvgnWgRt4DNCrvjWs9kwkp7sJ.jpeg",
+          "public\/6zpg7Z4sR6hNL0oi3T1BZH9wzj4SNwpZNuZehtAr.jpeg"
+        ],
+        "created_at": "2017-10-17 16:04:30"
+      }
+    ]
   }
 }
 ```
+
+##### 提交评论接口
+
+```json
+POST /messages
+Content-Type: multipart/form-data
+
+Body:
+image[]=图片列表
+message=测试信息
+file_id=1
+
+Response:
+{
+  "data": {
+    "status": "1"
+  }
+}
+```
+
+
 
 ##### 我的项目列表接口
 
@@ -897,6 +979,25 @@ Response:
 ```
 
 ##### 企业详情接口
+
+```
+GET /companies
+
+Response:
+{
+  "data": {
+    "email": "panxianhai@gmail.com",
+    "company_name": "company name",
+    "company_logo": "http://www.a.com/a.jpg",
+    "contacts": [],
+    "people": [],
+    "module": [],
+    "inverter": [],
+    "racking": [],
+    "attachment": []
+  }
+}
+```
 
 
 
