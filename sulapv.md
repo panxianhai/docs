@@ -599,6 +599,25 @@ Response:
 
 ####个人中心
 
+##### 获取用户信息
+
+```json
+GET /users/info
+
+Response:
+{
+  "data": {
+    "user_type": "individual",
+    "email": "panxianhai@gmail.com",
+    "phone": "18175150335",
+    "company_name": "",
+    "company_logo": "",
+    "first_name": "xianhai",
+    "last_name": "pan"
+  }
+}
+```
+
 ##### 系统通知接口
 
 * order参数有两种：asc, desc
