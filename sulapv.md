@@ -166,6 +166,11 @@ Response:
 
 ```json
 POST /users/forget_password
+
+Body:
+{
+    "email": "panxianhai@gmail.com"
+}
 ```
 
 
@@ -201,7 +206,22 @@ Body:
 {
   "type": "111111",
   "name": "测试",
-  "address": "雨花区"
+  "address": "雨花区",
+  "component": "123",
+  "roofs": [
+    {
+      "roof_name": "ABCVV",
+      "azimuth": "123",
+      "map_data": "123456",
+      "slope": "2222"
+    },
+    {
+      "roof_name": "ABCVV",
+      "azimuth": "123",
+      "map_data": "123456",
+      "slope": "2222"
+    }
+  ]
 }
 
 Response:
@@ -639,6 +659,31 @@ Response:
 }
 ```
 
+##### 邮箱验证接口
+
+* 修改密码和修改邮箱的时候都需要进行邮箱验证
+
+```json
+# 修改密码邮箱验证
+POST /users/reset_password
+#修改邮箱邮箱验证
+POST /users/reset_email
+
+Body:
+{
+    "email": "panxianhai@gmail.com"
+}
+
+Response:
+{
+  "data": {
+    "status": "1"
+  }
+}
+```
+
+
+
 ##### 修改密码接口
 
 ```json
@@ -730,9 +775,10 @@ Response:
 ##### 文件列表接口
 
 * order_id为订单的ID
+* order:按照时间排序，有两个参数asc,desc
 
 ```json
-GET /orders/{order_id}/files
+GET /orders/{order_id}/files?page=1&page_size=10&order=desc
 
 Response:
 {
