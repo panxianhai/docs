@@ -1071,5 +1071,22 @@ Response:
 }
 ```
 
+##### 文件上传接口
+
+```json
+POST /images/upload
+Content-Type: multipart/form-data
+
+Body:
+image[]=文件
+
+Response:
+{
+  "data": [
+    "public\/XlfvRoOR8Ifj5XQQTrq2hnjnotSsxT4XbQ7tcCrC.jpeg"
+  ]
+}
+```
+
 
 
