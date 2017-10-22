@@ -362,6 +362,7 @@ Response:
       }
     ],
     "inverter": [],
+    "attachment": [],
     "racking": [
       {
         "id": 6,
@@ -382,7 +383,6 @@ Response:
     ]
   }
 }
-
 ```
 
 ##### project列表接口
@@ -414,71 +414,88 @@ GET /packages
 
 Response:
 {
-  "data": {
-    "1": {
+  "data": [
+    {
+      "id": 1,
       "name": "Site survey[2]",
       "price": 125,
       "childs": []
     },
-    "2": {
+    {
+      "id": 2,
       "name": "Correction",
       "price": 0,
       "childs": []
     },
-    "3": {
+    {
+      "id": 3,
       "name": "Prelimiary design",
       "price": 50,
       "childs": []
     },
-    "4": {
+    {
+      "id": 4,
       "name": "Planset - Electrical",
       "price": 200,
-      "childs": {
-        "5": {
-          "name": "Ground mount",
+      "childs": [
+        {
+          "id": 5,
+          "pid": 4,
+          "package": "Ground mount",
           "price": 50
         },
-        "6": {
-          "name": "Battery backup",
+        {
+          "id": 6,
+          "pid": 4,
+          "package": "Battery backup",
           "price": 50
         },
-        "7": {
-          "name": "Residential (Over 18kW DC)",
+        {
+          "id": 7,
+          "pid": 4,
+          "package": "Residential (Over 18kW DC)",
           "price": 50
         }
-      }
+      ]
     },
-    "8": {
+    {
+      "id": 8,
       "name": "Structural calculaitons",
       "price": 150,
-      "childs": {
-        "9": {
-          "name": "Ground mount",
+      "childs": [
+        {
+          "id": 9,
+          "pid": 8,
+          "package": "Ground mount",
           "price": 50
         }
-      }
+      ]
     },
-    "10": {
+    {
+      "id": 10,
       "name": "Load Calcs\/Fault study",
       "price": 20,
       "childs": []
     },
-    "11": {
+    {
+      "id": 11,
       "name": "Other forms",
       "price": 150,
       "childs": []
     },
-    "12": {
+    {
+      "id": 12,
       "name": "Stamp[3]",
       "price": 200,
       "childs": []
     },
-    "13": {
+    {
+      "id": 13,
       "name": "Revision[4]",
       "price": 50,
       "childs": []
     }
-  }
+  ]
 }
 ```
 
