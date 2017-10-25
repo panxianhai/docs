@@ -508,10 +508,10 @@ Response:
 {
   "data": {
     "id": 1,
-    "name": "test name",
-    "phone": "18175150335",
+    "name": "1",
+    "phone": "",
     "license_type": "",
-    "email": "panxianhai@qq.com",
+    "email": "",
     "address": "",
     "roof_type": "",
     "roof_pitch": "",
@@ -522,6 +522,7 @@ Response:
     "roof_frame_b": "",
     "roof_frame_c": "",
     "project_name": "",
+    "project_type": "",
     "project_ahj": "",
     "project_address": "",
     "module_manufacturer": "",
@@ -534,8 +535,10 @@ Response:
     "racking_model": "",
     "attachment_manufacturer": "",
     "attachment_model": "",
-    "battery_battery": "",
-    "battery_controller": "",
+    "battery_backup_manufacturer": "",
+    "battery_backup_model": "",
+    "battery_backup_size": "",
+    "battery_backup_controller": "",
     "utility_company": "",
     "grid_requirement": "",
     "main_service_panel_manufacturer": "",
@@ -544,10 +547,12 @@ Response:
     "main_breaker_rating": "",
     "sub_panel_manufacturer": "",
     "sub_panel_rating": "",
+    "sub_panel_breaker_type": "",
+    "sub_panel_breaker_rating": "",
     "images": "",
     "note": "",
-    "created_at": "2017-10-15 10:39:33",
-    "updated_at": "2017-10-15 10:40:18"
+    "created_at": null,
+    "updated_at": null
   }
 }
 ```
