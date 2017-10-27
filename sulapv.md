@@ -644,6 +644,24 @@ Response:
 
 ####个人中心
 
+##### 修改企业名
+
+```json
+POST /companies/name
+
+Body:
+{
+	"company_name":"123"
+}
+
+Response:
+{
+  "data": {
+    "status": "1"
+  }
+}
+```
+
 ##### 获取用户信息
 
 ```json
