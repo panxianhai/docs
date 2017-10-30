@@ -809,6 +809,30 @@ Response:
 }
 ```
 
+##### 更改订单状态
+
+订单状态：
+
+1 完成
+
+5 关闭
+
+```json
+POST /orders/{1}/status
+
+Body：
+{
+  "status": "1"
+}
+
+Response:
+{
+  "data": {
+    "status": 1
+  }
+}
+```
+
 
 
 ##### 文件列表接口
