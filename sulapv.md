@@ -641,7 +641,7 @@ Response:
 }
 ```
 
-
+##### 
 
 ####个人中心
 
@@ -933,7 +933,7 @@ POST /messages
 Content-Type: multipart/form-data
 
 Body:
-image[]=图片列表
+images=1.jpg;2.jpg
 message=测试信息
 file_id=1
 
