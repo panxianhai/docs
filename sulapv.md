@@ -833,6 +833,23 @@ Response:
 }
 ```
 
+##### 查询订单状态
+
+1为订单完成
+
+（和订单的状态一致）
+
+```json
+GET /orders/{1}/status
+
+Response:
+{
+  "data": {
+    "status": 1
+  }
+}
+```
+
 
 
 ##### 文件列表接口
