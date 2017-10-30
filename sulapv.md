@@ -208,6 +208,7 @@ POST /projects
 Body:
 {
   "type": "111111",
+  "thumb": "a.jpg",
   "name": "测试",
   "address": "雨花区",
   "component": "123",
