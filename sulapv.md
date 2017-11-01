@@ -165,6 +165,29 @@ Response:
 }
 ```
 
+##### 验证token接口
+
+验证成功返回1，失败返回0
+
+```json
+POST /users/verify
+
+Body:
+{
+  "email": "panxianhai@gmail.com",
+  "token": "1233333"
+}
+
+Response:
+{
+  "data": {
+    "status": "1"
+  }
+}
+```
+
+
+
 ##### 忘记密码接口
 
 ```json
@@ -901,6 +924,7 @@ Response:
 {
   "data": {
     "file": {
+      "author": "author",
       "file_name": "测试文件名",
       "file_url": "a.zip",
       "file_size": "2.3",
@@ -1018,7 +1042,8 @@ company_logo=文件
 Response:
 {
   "data": {
-    "status": "1"
+    "status": "1",
+    "url": "http:\/\/sulapv.com\/storage\/oLEipoH7uvtci8KpgEvJIsifUvhcm2BwfnEAFk88.jpeg"
   }
 }
 ```
