@@ -1,6 +1,6 @@
 # Sulapv 接口文档
 
-## 约定
+# 约定
 
 ####HTTP
 
@@ -196,6 +196,26 @@ POST /users/forget_password
 Body:
 {
     "email": "panxianhai@gmail.com"
+}
+```
+
+#####重置密码接口(忘记密码)
+
+```json
+POST /users/set_password
+
+Body: 
+{
+  "email": "panxianhai@gmail.com",
+  "token": "1233333",
+  "password": "123456"
+}
+
+Response:
+{
+  "data": {
+    "status": "1"
+  }
 }
 ```
 
