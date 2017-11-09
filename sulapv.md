@@ -253,6 +253,7 @@ Body:
   "type": "111111",
   "thumb": "a.jpg",
   "name": "测试",
+  "project_point": "1233",
   "address": "雨花区",
   "component": "123",
   "roofs": [
@@ -290,6 +291,7 @@ Body:
   "thumb": "abc",
   "type": "residential",
   "name": "unamed project 1",
+  "project_point": "12333",
   "address": "LA",
   "component": "123",
   "roofs": [
@@ -330,6 +332,7 @@ Response:
     "project_img": "",
     "project_type": "111111",
     "project_name": "测试12333",
+    "project_point": "50.0001,54.00002",
     "address": "雨花区",
     "component": "",
     "roofs": [
