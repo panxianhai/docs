@@ -58,6 +58,7 @@ SUL_0018 上传logo的格式不正确
 SUL_0019 上传logo的大小不符合
 SUL_0020 评论必填
 SUL_0021 邮箱注册重复
+SUL_0022 消息和图片不能同时为空
 SUL_0098 404 NOT FOUND
 SUL_0099 token过期/为空/未登录
 ```
@@ -862,6 +863,8 @@ Response:
 
 1 完成
 
+3 退款中
+
 5 关闭
 
 ```json
@@ -869,7 +872,8 @@ POST /orders/{1}/status
 
 Body：
 {
-  "status": "1"
+  "status": "1",
+  "refund_explain": "退款原因(可选)"
 }
 
 Response:
