@@ -733,6 +733,7 @@ Response:
 ##### 系统通知接口
 
 * order参数有两种：asc, desc
+* is_read 0未读，1已读
 
 ```json
 GET /notices?page=1&page_size=10&order=asc
@@ -743,6 +744,8 @@ Response:
     "count": 1,
     "lists": [
       {
+        "id": 1,
+        "is_read": 0,
         "content": "213112313123123",
         "time": "12-12 12:12"
       }
