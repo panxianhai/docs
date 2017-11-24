@@ -751,6 +751,23 @@ Response:
 }
 ```
 
+#####通知状态变更
+
+* id 为通知的ID
+
+```http
+POST /notices/{id}/change_status
+
+Response:
+{
+  "data": {
+    "status": "1"
+  }
+}
+```
+
+
+
 ##### 邮箱验证接口
 
 * 修改密码和修改邮箱的时候都需要进行邮箱验证
