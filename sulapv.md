@@ -725,7 +725,8 @@ Response:
     "company_name": "",
     "company_logo": "",
     "first_name": "xianhai",
-    "last_name": "pan"
+    "last_name": "pan",
+    "notices": 5
   }
 }
 ```
