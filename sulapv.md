@@ -1041,8 +1041,11 @@ Response:
 
 ##### 我的项目列表接口
 
+* 排序方式，order_by=name：可选有name和time，分别代表按照项目名排序和时间排序，order_type=desc 倒序排列，可选有asc和desc，asc为顺序，desc为逆序。
+
 ```json
-GET /users/projects
+GET /users/projects?page=1&page_size=10&order_by=name&order_type=desc
+
 
 Response:
 {
