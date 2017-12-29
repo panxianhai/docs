@@ -610,6 +610,7 @@ Response:
 ##### Form新建接口
 
 * Body中的字段，字段列表同上面一个接口中返回的字段。除 `id, created_at, updated_at`
+* 注意：images字段替换成files字段传参
 
 ```json
 POST /forms
@@ -618,7 +619,8 @@ Body:
 {
   "name": "test name",
   "phone": "18175150335",
-  "email": "panxianhaigmail.com"
+  "email": "panxianhaigmail.com",
+  "files": "a.jpg;b.jpg"
 }
 
 Response:
@@ -633,13 +635,15 @@ Response:
 ##### From更新接口
 
 * Body中的字段，字段列表同上面一个接口中返回的字段。除 `id, created_at, updated_at`
+* 注意：images字段替换成files字段传参
 
 ```json
 POST /forms/{id}
 
 Body:
 {
-  "email": "panxianhai@qq.com"
+  "email": "panxianhai@qq.com",
+  "files": "a.jpg;b.jpg"
 }
 
 Response:
