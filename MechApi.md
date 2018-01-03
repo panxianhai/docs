@@ -464,3 +464,117 @@ Response:
 }
 ```
 
+## 供应商管理
+
+### 供应商列表
+
+```json
+GET /supplier/index
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "Suppliers": [
+      {
+        "id": 2049,
+        "bm": "407210",
+        "mc": "潘大大2",
+        "mc_all": "407210-潘大大2",
+        "lxr": "测试",
+        "tel": "18175150335",
+        "dz": "测试地址",
+        "balance": 0
+      }
+    ],
+    "count": 1,
+    "money": 0
+  }
+}
+```
+
+### 新增供应商
+
+```json
+POST /supplier/create
+
+Body:
+{
+  "phone": "18175150335",
+  "address": "测试地址",
+  "remarks": "备注测试",
+  "mc": "潘大大",
+  "armny": "1000",
+  "tel": "021-00002222",
+  "name": "测试"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 删除供应商
+
+```json
+POST /supplier/delete
+
+Body:
+{
+  "gys_id": "2049"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 供应商详情
+
+```json
+GET /supplier/show/2049
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id": 2049,
+    "mc": "潘大大",
+    "lxr": "潘大大",
+    "tel": "18175150335",
+    "tel_gs": "021-00002222",
+    "dz": "测试地址",
+    "bz": "备注测试",
+    "paymny": 0
+  }
+}
+```
+
+### 编辑供应商
+
+```json
+POST /supplier/edit
+
+Body:
+{
+  "gys_id": 2049,
+  "phone": "18175150335",
+  "address": "测试地址",
+  "remarks": "备注测试",
+  "mc": "潘大大",
+  "tel": "021-00002222",
+  "name": "测试"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
