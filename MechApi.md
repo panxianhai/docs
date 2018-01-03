@@ -349,3 +349,116 @@ Response:
 }
 ```
 
+## 客户管理
+
+### 客户列表
+
+```json
+GET /customer/index
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "id": 2049,
+      "bm": "407210",
+      "mc": "潘大大",
+      "mc_all": "407210-潘大大",
+      "lxr": "潘大大",
+      "tel": "18175150335",
+      "dz": "测试地址",
+      "id_jbr": 171,
+      "zjm": ""
+    }
+  ]
+}
+```
+
+### 新增客户
+
+```json
+POST /customer/create
+
+Body:
+{
+  "phone": "18175150335",
+  "address": "测试地址",
+  "remarks": "备注测试",
+  "mc": "潘大大",
+  "armny": "1000",
+  "tel": "021-00002222",
+  "name": "测试"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 删除客户
+
+```json
+POST /customer/delete
+
+Body:
+{
+  "kh_id": "2049"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 客户详情
+
+```json
+GET /customer/show/2049
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id": 2049,
+    "mc": "潘大大",
+    "lxr": "潘大大",
+    "tel": "18175150335",
+    "tel_gs": "021-00002222",
+    "dz": "测试地址",
+    "bz": "备注测试",
+    "armny": 0
+  }
+}
+```
+
+### 编辑客户
+
+```json
+POST /customer/edit
+
+Body:
+{
+  "kh_id": 2049,
+  "phone": "18175150335",
+  "address": "测试地址",
+  "remarks": "备注测试",
+  "mc": "潘大大",
+  "armny": "1000",
+  "tel": "021-00002222",
+  "name": "测试"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
