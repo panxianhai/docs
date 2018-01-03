@@ -599,10 +599,8 @@ Response:
     "sub_panel_rating": "",
     "sub_panel_breaker_type": "",
     "sub_panel_breaker_rating": "",
-    "images": "",
-    "note": "",
-    "created_at": null,
-    "updated_at": null
+    "files": "",
+    "note": ""
   }
 }
 ```
