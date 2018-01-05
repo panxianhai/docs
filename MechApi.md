@@ -585,7 +585,7 @@ Response:
 
 ### 编辑供应商
 
-```json
+```Json
 POST /supplier/edit
 
 Body:
