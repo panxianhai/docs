@@ -186,7 +186,6 @@ POST /goods/create
 Body:
 {
   "goods_name": "测试商品",
-  "bm": "JMD900500004", // 编码自动生成
   "cost_price": "100",
   "retail_price": "150",
   "unit": "箱",
@@ -198,7 +197,10 @@ Body:
   "brand": "品牌",
   "images": "1.jpg;2.jpg;3.jpg",
   "init_num": "100",
-  "stock_warning": "1",
+  "init_price": 100,
+  "init_total": 200,
+  "stock_warning_low": 1,
+  "stock_warning_high": 20,
   "goods_status": "1"
 }
 Response:
@@ -220,7 +222,23 @@ POST /goods/edit
 
 Body:
 {
-  "init_num": "100"
+  "goods_name": "测试商品",
+  "cost_price": "100",
+  "retail_price": "150",
+  "unit": "箱",
+  "category": "1",
+  "models": "适配机型",
+  "bar_code": "111222333",
+  "specification": "规格型号",
+  "notes": "备注",
+  "brand": "品牌",
+  "images": "1.jpg;2.jpg;3.jpg",
+  "init_num": "100",
+  "init_price": 100,
+  "init_total": 200,
+  "stock_warning_low": 1,
+  "stock_warning_high": 20,
+  "goods_status": "1"
 }
 
 Response:
@@ -229,6 +247,15 @@ Response:
   "message": "success",
   "data": []
 }
+```
+
+### 商品详情
+
+```json
+GET /goods/show/1
+
+Response:
+
 ```
 
 ### 单位列表
@@ -505,7 +532,7 @@ Body:
   "address": "测试地址",
   "remarks": "备注测试",
   "mc": "潘大大",
-  "armny": "1000",
+  "paymny": "1000",
   "tel": "021-00002222",
   "name": "测试"
 }
