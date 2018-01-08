@@ -891,18 +891,22 @@ Response:
 
 ### 获取总部供应商
 
+0: 总部供应商 1:自己管理的供应商
+
 ```json
-GET /supplier/get
+GET /supplier/get/0
 
 Response:
 {
   "error": 0,
   "message": "success",
-  "data": {
-    "id": 174,
-    "bm": "274",
-    "mc": "9999总部供应商"
-  }
+  "data": [
+    {
+      "id": 174,
+      "bm": "274",
+      "mc": "9999总部供应商"
+    }
+  ]
 }
 ```
 
