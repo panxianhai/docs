@@ -1048,7 +1048,7 @@ Response:
 }
 ```
 
-### 新增总部采购订单
+### 新增总部采购订单(草稿)
 
 ```json
 POST /order/create
@@ -1079,5 +1079,16 @@ Response:
   "message": "success",
   "data": {}
 }
+```
+
+### 更新总部采购订单(草稿)
+
+```
+POST /order/update
+
+Body:
+
+Response:
+
 ```
 
