@@ -1111,6 +1111,47 @@ Response:
 }
 ```
 
+### 总部采购提交订单
+
+```json
+POST /order/submit
+
+Body:
+{
+  "bz": "",
+  "goods": [
+    {
+      "dj_pf3": "325.00",
+      "id_sp": "19978",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "390.00",
+      "id_sp": "2000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "490.00",
+      "id_sp": "3000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    }
+  ],
+  "id_gys": "174"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+
+
 ### 总部采购订单详情
 
 ```json
