@@ -1077,19 +1077,68 @@ Response:
 {
   "error": 0,
   "message": "success",
-  "data": {}
+  "data": {
+    "dh": "CD0222017112800034",
+    "user": "张家界加盟店"
+  }
 }
 ```
 
 ### 更新总部采购订单(草稿)
 
-```
+```json
 POST /order/update
 
 Body:
+{
+  "id_gys": "174",
+  "dh": "CD0222017112800034",
+  "bz": "12333333",
+  "goods": [
+    {
+      "id_sp": "12333",
+      "num": "2",
+      "dj_pf3": "120",
+      "jzdw_mc": "桶"
+    }
+  ]
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 总部采购订单详情
+
+```json
+GET /order/show/CD0222017112800034 (单号)
 
 Response:
-
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id_gys": 174,
+    "dh": "CD0222017112800034",
+    "je_bhs": 240,
+    "je_hs": 240,
+    "goods": [
+      {
+        "id_sp": 12333,
+        "sl": 2,
+        "dj_bhs": 120,
+        "dj_hs": 120,
+        "je_bhs": 240,
+        "je_hs": 240,
+        "mc": "现代水温过热报警器D6BR D6BRT",
+        "syjx": ""
+      }
+    ]
+  }
+}
 ```
 
 ### 总部采购订单搜索
