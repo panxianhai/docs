@@ -1166,6 +1166,7 @@ Response:
     "dh": "CD0222017112800034",
     "je_bhs": 240,
     "je_hs": 240,
+    "count": 10,
     "goods": [
       {
         "id_sp": 12333,
