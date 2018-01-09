@@ -1048,3 +1048,36 @@ Response:
 }
 ```
 
+### 新增总部采购订单
+
+```json
+POST /order/create
+
+Body:
+{
+  "id_gys": "174",
+  "bz": "12333333",
+  "goods": [
+    {
+      "id_sp": "12333",
+      "num": "2",
+      "dj_pf3": "110",
+      "jzdw_mc": "桶"
+    },
+    {
+      "id_sp": "12334",
+      "num": "10",
+      "dj_pf3": "120",
+      "jzdw_mc": "桶"
+    }
+  ]
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
