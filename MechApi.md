@@ -1119,6 +1119,7 @@ POST /order/submit
 Body:
 {
   "bz": "",
+  "dh": "",
   "goods": [
     {
       "dj_pf3": "325.00",
@@ -1167,6 +1168,7 @@ Response:
     "je_bhs": 240,
     "je_hs": 240,
     "count": 10,
+    "user": "张家界加盟店",
     "goods": [
       {
         "id_sp": 12333,
