@@ -255,7 +255,31 @@ Response:
 GET /goods/show/1
 
 Response:
-
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id": "1",
+    "goods_name": "测试",
+    "bm": "11223344",
+    "cost_price": "225.00",
+    "retail_price": "225.00",
+    "unit": "箱",
+    "category": "1",
+    "models": "",
+    "bar_code": "112233333",
+    "specification": "",
+    "notes": "",
+    "brand": "",
+    "images": "",
+    "init_num": "",
+    "init_price": "",
+    "init_total": "",
+    "stock_warning_low": "",
+    "stock_warning_high": "",
+    "goods_status": ""
+  }
+}
 ```
 
 ### 单位列表
