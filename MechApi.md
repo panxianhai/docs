@@ -1243,11 +1243,13 @@ Response:
   "data": [
     {
       "id": 1,
-      "mc": "微信"
+      "mc": "微信",
+      "isdefault": 1
     },
     {
       "id": 2,
-      "mc": "银行卡"
+      "mc": "银行卡",
+      "isdefault": 0
     }
   ]
 }
