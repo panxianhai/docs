@@ -1229,3 +1229,27 @@ Response:
 }
 ```
 
+## 总部收货单
+
+### 结算方式
+
+```json
+GET /receive/cash_type
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "id": 1,
+      "mc": "微信"
+    },
+    {
+      "id": 2,
+      "mc": "银行卡"
+    }
+  ]
+}
+```
+
