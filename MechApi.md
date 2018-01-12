@@ -265,6 +265,7 @@ Response:
     "cost_price": "225.00",
     "retail_price": "225.00",
     "unit": "箱",
+    "category_id": "1",
     "category": "1",
     "models": "",
     "bar_code": "112233333",
@@ -1362,6 +1363,59 @@ Response:
   "error": 0,
   "message": "success",
   "data": {}
+}
+```
+
+### 总部收货单详情
+
+```Json
+GET /receive/show/CR0222017112800011
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id_gys": 174,
+    "dh": "CR0222017112800011",
+    "je_bhs": "1205.00",
+    "je_hs": "1205.00",
+    "je_sf": "1400.00",
+    "goods": [
+      {
+        "id_sp": 19978,
+        "sl": 1,
+        "dj_bhs": "325.00",
+        "dj_hs": "325.00",
+        "je_bhs": "325.00",
+        "je_hs": "325.00",
+        "mc": "工字架\/R60",
+        "syjx": "R60"
+      },
+      {
+        "id_sp": 2000,
+        "sl": 1,
+        "dj_bhs": "390.00",
+        "dj_hs": "390.00",
+        "je_bhs": "715.00",
+        "je_hs": "715.00",
+        "mc": "F481CACF101005-1050 软管总成  XE370、XE210C",
+        "syjx": "XE370、210C"
+      },
+      {
+        "id_sp": 3000,
+        "sl": 1,
+        "dj_bhs": "490.00",
+        "dj_hs": "490.00",
+        "je_bhs": "1205.00",
+        "je_hs": "1205.00",
+        "mc": "XG21.5-CD 铲斗油缸修理包  XE215CA",
+        "syjx": "XE215CA"
+      }
+    ],
+    "count": 3,
+    "user": "张家界加盟店"
+  }
 }
 ```
 
