@@ -1658,3 +1658,205 @@ Response:
 }
 ```
 
+##销售单
+
+### 客户列表
+
+```Json
+GET /sale/customers
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "id": 227,
+      "mc": "陕西分公司"
+    }
+  ]
+}
+```
+
+### 销售单列表
+
+```json
+GET /sale/index
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "dh": "JJCR0222017112878176",
+      "mc": "潘楚明",
+      "je_hs": "1205.00",
+      "je_bhs": "1205.00",
+      "rq": "2018-01-13 06:14:51",
+      "flag_sh": 0
+    },
+    {
+      "dh": "JJCR02220171128",
+      "mc": "潘楚明",
+      "je_hs": "1205.00",
+      "je_bhs": "1205.00",
+      "rq": "2018-01-12 23:05:47",
+      "flag_sh": 0
+    }
+  ]
+}
+```
+
+### 新增销售单
+
+```json
+POST /sale/create
+
+Body:
+{
+  "bz": "",
+  "goods": [
+    {
+      "dj_pf3": "325.00",
+      "id_sp": "19978",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "390.00",
+      "id_sp": "2000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "490.00",
+      "id_sp": "3000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    }
+  ],
+  "id_kh": "122",
+  "bdsf": "1400",
+  "dh_dd": "CD0222017112800050"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "dh": "JJCR0222017112878176"
+  }
+}
+```
+
+### 更新销售单
+
+```
+POST /sale/update
+
+Body:
+
+REsponse:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 销售单详情
+
+```json
+GET /sale/show/JJCR0222017112878176
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id_kh": 122,
+    "dh": "JJCR0222017112878176",
+    "je_bhs": "1205.00",
+    "je_hs": "1205.00",
+    "goods": [
+      {
+        "id_sp": 19978,
+        "sl": 1,
+        "dj_bhs": "325.00",
+        "dj_hs": "325.00",
+        "je_bhs": "325.00",
+        "je_hs": "325.00",
+        "mc": "工字架\/R60",
+        "syjx": "R60"
+      },
+      {
+        "id_sp": 2000,
+        "sl": 1,
+        "dj_bhs": "390.00",
+        "dj_hs": "390.00",
+        "je_bhs": "390.00",
+        "je_hs": "390.00",
+        "mc": "F481CACF101005-1050 软管总成  XE370、XE210C",
+        "syjx": "XE370、210C"
+      },
+      {
+        "id_sp": 3000,
+        "sl": 1,
+        "dj_bhs": "490.00",
+        "dj_hs": "490.00",
+        "je_bhs": "490.00",
+        "je_hs": "490.00",
+        "mc": "XG21.5-CD 铲斗油缸修理包  XE215CA",
+        "syjx": "XE215CA"
+      }
+    ],
+    "count": 3,
+    "user": "张家界加盟店"
+  }
+}
+```
+
+### 提交销售单
+
+```json
+POST /sale/submit
+
+Body:
+{
+  "bz": "测试备注2",
+  "goods": [
+    {
+      "dj_pf3": "325.00",
+      "id_sp": "19978",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "390.00",
+      "id_sp": "2000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "490.00",
+      "id_sp": "3000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    }
+  ],
+  "id_kh": "122",
+  "bdsf": "1400",
+  "dh_dd": "CD0222017112800050",
+  "dh": "JJCR0222017112878176",
+  "cash_type": "1"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
