@@ -795,6 +795,27 @@ Response:
 }	
 ```
 
+### 扫描条码获得商品信息
+
+```json
+GET /goods/scan/111222333
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id": 3278,
+    "bm": "111310018",
+    "mc": "徐工挖机(18L)抗磨液压油46号",
+    "syjx": "",
+    "dj_ls": 348,
+    "dj_pf3": 0,
+    "cover": ""
+  }
+}
+```
+
 
 
 ## 客户管理
