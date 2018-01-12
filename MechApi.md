@@ -1323,3 +1323,45 @@ Response:{
 
 ```
 
+### 更新总部收货单(草稿)
+
+```json
+POST /receive/update
+
+Body:
+{
+  "bz": "",
+  "goods": [
+    {
+      "dj_pf3": "325.00",
+      "id_sp": "19978",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "390.00",
+      "id_sp": "2000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    },
+    {
+      "dj_pf3": "490.00",
+      "id_sp": "3000",
+      "jzdw_mc": "桶",
+      "num": "1"
+    }
+  ],
+  "id_gys": "174",
+  "bdsf": "1400",
+  "dh_dd": "CD0222017112800050",
+  "dh": "CR0222017112800011"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
