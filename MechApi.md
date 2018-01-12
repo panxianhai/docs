@@ -1551,3 +1551,46 @@ Response:
 }
 ```
 
+### 销售出库单详情
+
+```json
+GET /receive/details/PF0222017042400001
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id_gys": 174,
+    "dh": "PF0222017042400001",
+    "je_bhs": 73869,
+    "je_hs": 73869,
+    "count": 329,
+    "je_sf": 73869,
+    "user": "张家界加盟店",
+    "goods": [
+      {
+        "id_sp": 15858,
+        "sl": 1,
+        "dj_bhs": 120,
+        "dj_hs": 120,
+        "je_bhs": 120,
+        "je_hs": 120,
+        "mc": "空气滤芯(天亦蓝TA-8615)",
+        "syjx": ""
+      },
+      {
+        "id_sp": 15862,
+        "sl": 1,
+        "dj_bhs": 70,
+        "dj_hs": 70,
+        "je_bhs": 70,
+        "je_hs": 70,
+        "mc": "空气滤芯(天亦蓝TA-8625)",
+        "syjx": ""
+      }
+    ]
+  }
+}
+```
+
