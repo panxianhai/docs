@@ -1746,7 +1746,8 @@ Response:
   "error": 0,
   "message": "success",
   "data": {
-    "dh": "JJCR0222017112878176"
+    "dh": "JJCR0222017112878176",
+    "user":"张家界加盟店"
   }
 }
 ```
