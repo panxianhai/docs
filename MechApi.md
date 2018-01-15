@@ -65,10 +65,10 @@ Response:
     "id": 7,
     "bm": "1006", // 加盟店编码
     "mc": "邵阳店", // 加盟店名称
-    "mc_all": "1006-邵阳店",
-    "id_jbr": 0,
-    "lxr": "",
     "user_id": 20, // 用户ID
+    "account": "1402005", // 账号
+    "username": "hnldxh", // 名称
+    "avatar": "", // 头像
     "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIiwianRpIjoiNGYxZzIzYTEyYWEifQ.eyJpc3MiOiJodHRwOlwvXC93d3cuamp0bS5vcmciLCJhdWQiOiRwOlwvXC93d3cuamp0bS5vcmciLCJqdGkiOiI0ZjFnMjNhMTJhYSIsImlhdCI6MTUxNDMzOTM0MiwibmJmIjoxNTE0MzM5MzQyLCJleHAiOjE1MTQzNzUzNDIsInVpZCI6MjB9."
   }
 }
@@ -117,7 +117,8 @@ Response:
 
 ### 分类列表
 
-* id_gsjg: 0为总部分类，其他为加盟商分类
+* zb 为总部分类
+* jmd为加盟店分类
 
 ```json
 GET /goods/categories
@@ -126,29 +127,57 @@ Response:
 {
   "error": 0,
   "message": "success",
+  "data": {
+    "zb": [
+      {
+        "id": 1,
+        "code": "000001",
+        "name": "测试分类1",
+        "id_gsjg": 0
+      }
+    ],
+    "jmd": [
+      {
+        "id": 2,
+        "code": "900501",
+        "name": "加盟商分类1",
+        "id_gsjg": 25
+      }
+    ]
+  }
+}
+```
+
+### 获得加盟店自己的分类
+
+```json
+GET /goods/category
+
+Response:
+{
+  "error": 0,
+  "message": "success",
   "data": [
-    {
-      "id": 1,
-      "code": "000001",
-      "name": "测试分类1",
-      "id_gsjg": 0
-    },
     {
       "id": 2,
       "code": "900501",
       "name": "加盟商分类1",
-      "id_gsjg": 9005
+      "id_gsjg": 25
     }
   ]
 }
 ```
 
+
+
 ### 商品列表
 
-* 按照分类获取和分页待完善。
+* filter和ID两个参数都可选，两个都为空的时候获取全部商品
+* filter有两种参数，即选择总部分类和加盟商分类的时候，总部分类参数为zb，加盟商分类参数为jmd
+* id参数需要在filter参数有的前提下才生效，为分类的实际ID
 
 ```json
-GET /goods/index
+GET /goods/index?filter=zb&id=1
 
 Response:
 {
