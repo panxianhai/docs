@@ -168,6 +168,28 @@ Response:
 }
 ```
 
+### 获得总部分类
+
+```json
+GET /goods/cat_zb
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "id": 2,
+      "code": "900501",
+      "name": "加盟商分类1",
+      "id_gsjg": 25
+    }
+  ]
+}
+```
+
+### 
+
 ### 加盟店新增分类
 
 ```json
