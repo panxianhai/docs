@@ -168,7 +168,26 @@ Response:
 }
 ```
 
+### 加盟店新增分类
 
+```json
+POST /goods/add_category
+
+Body:
+{
+  "name": "加盟店测试分类"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id": 9,
+    "name": "加盟店测试分类"
+  }
+}
+```
 
 ### 商品列表
 
