@@ -113,6 +113,27 @@ Response:
 }
 ```
 
+### 系统预置参数
+
+```json
+GET /user/params
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "gh_ddrk_default_gys_allow_arrear": "0", //采购业务默认的供应商是否允许欠款
+    "gh_ddrk_default_gys_id": null, //采购业务默认的供应商id
+    "xs_ck_default_kh_allow_arrear": "0", // 销售单默认的客户是否允许欠款
+    "xs_ck_default_kh_id": null, // 销售单默认的客户id
+    "zbgh_ddrk_default_gys_id": "174" //总部采购业务默认的供应商id
+  }
+}
+```
+
+
+
 ## 商品管理
 
 ### 分类列表
@@ -1988,5 +2009,14 @@ Response:
     "cover": ""
   }
 }
+```
+
+### 库存告警
+
+```json
+GET /stock/warning
+
+Response:
+
 ```
 
