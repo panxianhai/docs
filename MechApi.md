@@ -1289,7 +1289,10 @@ Response:
 {
   "error": 0,
   "message": "success",
-  "data": {}
+  "data": {
+    "dh": "CD0242017112800110",
+    "user": "hnldxh"
+  }
 }
 ```
 
@@ -1714,7 +1717,10 @@ Response:
 {
   "error": 0,
   "message": "success",
-  "data": {}
+  "data": {
+    "dh": "CD0242017112800110",
+    "user": "hnldxh"
+  }
 }
 ```
 
@@ -1872,6 +1878,7 @@ Response:
     "je_bhs": "1205.00",
     "je_hs": "1205.00",
     "bdsf": "100.00",
+    "bz": "beizhu",
     "goods": [
       {
         "id_sp": 19978,
@@ -1948,7 +1955,10 @@ Response:
 {
   "error": 0,
   "message": "success",
-  "data": {}
+  "data": {
+    "dh": "CD0242017112800110",
+    "user": "hnldxh"
+  }
 }
 ```
 
@@ -1999,13 +2009,14 @@ Response:
   "message": "success",
   "data": {
     "id": "15855",
+    "bm": "111210785",
     "barcode": "2211121078504",
     "mc": "空气滤芯(天亦蓝TA-8506)",
-    "sl_qm": ".0000000", // 库存数量
-    "je_qm_hs": ".0000000", // 库存金额
-    "je_in_hs": ".0000000", // 进价
-    "dj_cb_hs": ".0000000", // 成本价
-    "dj_ls": "203.0000000", //零售价
+    "sl_qm": "0.00",
+    "je_qm_hs": "0.00",
+    "je_in_hs": "0.00",
+    "dj_cb_hs": "0.00",
+    "dj_ls": "203.00",
     "cover": ""
   }
 }
