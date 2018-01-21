@@ -1897,7 +1897,8 @@ Response:
     "bdsf": "100.00",
     "bz": "beizhu",
     "zhyf": '1233', //折后应付
-    'zkl': '89.9', //折扣率
+    'zkl': '89', //折扣率
+    'erasemny':"25.2", // 抹零金额
     "goods": [
       {
         "id_sp": 19978,
@@ -1969,7 +1970,9 @@ Body:
   "zhyf": "123", // 折后应付
   "dh_dd": "CD0222017112800050",
   "dh": "JJCR0222017112878176",
-  "cash_type": "1"
+  "cash_type": "1",
+  "erasemny": '25.6', // 抹零金额
+  "discount": 80 // 折扣率
 }
 Response:
 {
