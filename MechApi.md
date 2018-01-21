@@ -2038,6 +2038,8 @@ Response:
 
 ### 打印订单
 
+type参数：order采购订单，receive 收货单，sale销售单
+
 ```json
 POST /printing/index
 
