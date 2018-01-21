@@ -1374,6 +1374,23 @@ Response:
 }
 ```
 
+### 查询销售出库单号
+
+```json
+GET /order/getck/CD0332018011900018
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "ck_dh": "PF0172018011800039"
+  }
+}
+```
+
+
+
 ## 总部收货单
 
 ### 结算方式
@@ -2096,7 +2113,7 @@ Response:
     "count": 3,
     "user": "娄底新化服务站",
     "zhyf": "1205.00",
-    "zkl": "100.00"
+    "zkl": "100.00",
     "bdqk": "0.00",
     "cash_type": ""
   }
