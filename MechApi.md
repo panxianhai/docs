@@ -1825,7 +1825,11 @@ Body:
   ],
   "id_kh": "122",
   "bdsf": "1400",
-  "dh_dd": "CD0222017112800050"
+  "dh_dd": "CD0222017112800050",
+  "zhyf": "123",
+  "cash_type": 5,
+  "discount": "80",
+  "erasemny": "123.21"
 }
 
 Response:
@@ -1870,7 +1874,11 @@ Body:
   "id_kh": "122",
   "bdsf": "1400",
   "dh_dd": "CD0222017112800050",
-  "dh": "JJCR0222017112878176"
+  "dh": "JJCR0222017112878176",
+   "zhyf": "123",
+  "cash_type": 5,
+  "discount": "80",
+  "erasemny": "123.21"
 }
 REsponse:
 {
