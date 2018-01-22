@@ -2131,3 +2131,46 @@ Response:
 }
 ```
 
+## 应收报表
+
+### 应收报表首页
+
+```json
+GET /receivable/index
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "qk_count": 0,
+    "qk_total": "0.00",
+    "jy_count": 3,
+    "jy_total": "-2042.00",
+    "lists": [
+      {
+        "id": 1,
+        "mc": "马学文",
+        "lxr": "123",
+        "tel": "456",
+        "balance": "-100.00"
+      },
+      {
+        "id": 2,
+        "mc": "廖志",
+        "lxr": "",
+        "tel": "",
+        "balance": "-987.00"
+      },
+      {
+        "id": 3,
+        "mc": "宋征酌",
+        "lxr": "",
+        "tel": "",
+        "balance": "-955.00"
+      }
+    ]
+  }
+}
+```
+
