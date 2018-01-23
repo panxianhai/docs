@@ -2180,7 +2180,7 @@ Response:
 ### 应用报表客户
 
 ```json
-GET /receivable/customer/2080 //客户ID
+GET /receivable/customer/2080?from=2018-01-01&to2018-02-01
 
 Response:
 {
@@ -2231,7 +2231,7 @@ Response:
 ### 收款单据
 
 ```json
-GET /receivable/skd/2080
+GET /receivable/skd/2080?from=2018-01-01&to2018-02-01
 
 Response:
 {
@@ -2262,7 +2262,7 @@ Response:
 ### 欠款单据
 
 ```json
-GET /receivable/xsd/2080 //客户ID
+GET /receivable/xsd/2080?from=2018-01-01&to2018-02-01
 
 Response:
 {
