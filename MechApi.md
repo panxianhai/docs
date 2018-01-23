@@ -1910,7 +1910,8 @@ Response:
     "zhyf": '1233', //折后应付
     'zkl': '89', //折扣率
     'erasemny':"25.2", // 抹零金额
-    "cash_type": "银行卡",
+    "cash_type": "4",
+    "cash_type_name": "4",
     "goods": [
       {
         "id_sp": 19978,
