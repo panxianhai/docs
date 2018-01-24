@@ -2006,8 +2006,10 @@ Response:
 
 ### 库存查询
 
+sort参数：mr 默认，bm编码，sl数量，je金额
+
 ```Json
-GET /stock/index
+GET /stock/index?sort=bm
 
 Response:
 {
