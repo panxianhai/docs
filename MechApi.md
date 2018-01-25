@@ -2308,3 +2308,43 @@ Response:
 }
 ```
 
+## 销售报表
+
+### 销售报表统计
+
+Time: 0,1,2,3
+
+```json
+GET /salebill/summary?time=0
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "yh": "83.00", // 折扣额
+    "je": "460.00", //销售额
+    "dd_sl": 1,  //订单数量
+    "sp_sl": 3 // 商品数量
+  }
+}
+```
+
+### 商品列表
+
+```json
+GET /salebill/goods?time=0
+
+Response:
+
+```
+
+### 客户列表
+
+```json
+GET /salebill/customer?time=0
+
+Response:
+
+```
+
