@@ -317,6 +317,7 @@ POST /goods/edit
 
 Body:
 {
+  "id_sp": "12334",
   "goods_name": "测试商品",
   "cost_price": "100",
   "retail_price": "150",
