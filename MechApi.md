@@ -2492,3 +2492,47 @@ Response:
 }
 ```
 
+### 编辑收款单
+
+```json
+POST /skd/edit
+
+Body:
+{
+  "id_jsfs": "1",
+  "je": "100",
+  "yhje": "0",
+  "bz": "www2",
+  "imgs": [
+    "1.jpg",
+    "2.jpg"
+  ],
+  "rq": "2018-01-01 12:12:12",
+  "dh": "JJSK0332018012500006"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 删除收款单
+
+```json
+POST /skd/delete
+
+Body:
+{
+  "dh": "JJSK0332018012500006"
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
