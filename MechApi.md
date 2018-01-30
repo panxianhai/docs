@@ -935,7 +935,7 @@ Response:
         "lxr": "测试",
         "tel": "18175150335",
         "dz": "测试地址",
-        "balance": 0
+        "balance": "0.00"
       }
     ],
     "count": 1,
@@ -2420,6 +2420,54 @@ Response:
       "je_yh": "208.00"
     }
   ]
+}
+```
+
+## 收款单
+
+### 客户欠款详情
+
+* id_kh 为客户的ID
+
+```json
+GET /skd/show/{id_kh}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id": "1",
+    "mc": "马学文",
+    "balance": ".00000000"
+  }
+}
+```
+
+### 新增收款单
+
+```json
+POST /skd/create
+
+Body:
+{
+  "id_jsfs": "1", // 结算方式
+  "id_kh": "1",
+  "je": "100",
+  "yhje": "0",
+  "bz": "www",
+  "imgs": [
+    "1.jpg",
+    "2.jpg"
+  ]
+}
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "dh": "JJSK0332018012500005"
+  }
 }
 ```
 
