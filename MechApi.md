@@ -2471,3 +2471,24 @@ Response:
 }
 ```
 
+### 收款单详情
+
+```json
+GET /skd/details/JJSK0332018012500004
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "kh_mc": "马学文",
+    "pay_type": "现金",
+    "je": "100.00",
+    "yhje": "0.00",
+    "rq": "2018-01-30 10:27:00",
+    "bz": "www",
+    "dh": "JJSK0332018012500004"
+  }
+}
+```
+
