@@ -1408,6 +1408,47 @@ Response:
 }
 ```
 
+### 延迟收货
+
+```json
+POST /order/delay
+
+Body:
+{
+  "dh": "CD0332018012500003"
+}
+
+Response:
+{
+  "error": 1,
+  "message": "您已经申请过延期了",
+  "data": {}
+}
+```
+
+### 凭证列表
+
+```json
+GET /voucher/show/CD0332018012500003
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "voucher_no": "222222",
+      "shipper": "tester",
+      "filename": [
+        "1.jpg",
+        "2.jpg"
+      ],
+      "uploadtime": "2018-12-12 12:11:11"
+    }
+  ]
+}
+```
+
 
 
 ## 总部收货单
