@@ -1329,6 +1329,7 @@ Response:
     "user": "张家界加盟店",
     "state": 1,
     "createtime": "2018-02-12 12:34:21",
+    "payment": 1,
     "paymode": 1，
     "total_fee"： "123.22",
     "paytime": "2018-02-12 12:34:21",
