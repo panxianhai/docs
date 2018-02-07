@@ -1207,6 +1207,7 @@ Body:
 {
   "id_gys": "174",
   "bz": "12333333",
+  "pay_type": 1,
   "goods": [
     {
       "id_sp": "12333",
@@ -1229,7 +1230,8 @@ Response:
   "message": "success",
   "data": {
     "dh": "CD0222017112800034",
-    "user": "张家界加盟店"
+    "user": "张家界加盟店",
+    "createtime": "2018-02-12 12:22:11"
   }
 }
 ```
@@ -1244,6 +1246,7 @@ Body:
   "id_gys": "174",
   "dh": "CD0222017112800034",
   "bz": "12333333",
+  "pay_type": 2,
   "goods": [
     {
       "id_sp": "12333",
@@ -1299,7 +1302,8 @@ Response:
   "message": "success",
   "data": {
     "dh": "CD0242017112800110",
-    "user": "hnldxh"
+    "user": "hnldxh",
+    "createtime": "2018-02-12 12:22:11"
   }
 }
 ```
@@ -1322,6 +1326,11 @@ Response:
     "je_hs": 240,
     "count": 10,
     "user": "张家界加盟店",
+    "state": 1,
+    "createtime": "2018-02-12 12:34:21",
+    "paymode": 1，
+    "total_fee"： "123.22",
+    "paytime": "2018-02-12 12:34:21",
     "goods": [
       {
         "id_sp": 12333,
