@@ -1449,6 +1449,24 @@ Response:
 }
 ```
 
+### 允许的支付方式
+
+```json
+GET /order/payment
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "id_gsjg": "34",
+    "online_flag": "1",
+    "cod_flag": "1",
+    "monthcash_flag": "1"
+  }
+}
+```
+
 
 
 ## 总部收货单
