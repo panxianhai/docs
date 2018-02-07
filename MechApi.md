@@ -2547,3 +2547,104 @@ Response:
 }
 ```
 
+## 反馈问题
+
+### 新增反馈
+
+```json
+POST /feedback/create
+
+Body:
+{
+  "ques_desc": "描述信息",
+  "filename": [
+    "a.jpg",
+    "b.jpg"
+  ],
+  "dd_dh": "20180102111111"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 取消反馈
+
+```json
+POST /feedback/cancel
+
+Body:
+{
+  "dh": "20180207140633574417"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 修改反馈
+
+```json
+POST /feedback/update
+
+Body:
+{
+  "ques_desc": "描述信息22",
+  "filename": [
+    "a.jpg",
+    "b.jpg"
+  ],
+  "dh": "20180207140633574417"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 反馈列表
+
+```json
+GET /feedback/index
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "dh": "20180207141417611468",
+      "state": 1,
+      "dd_dh": "20180102111111",
+      "id_gsjg": "34",
+      "createtime": "02-07 14:14",
+      "ques_desc": "描述信息",
+      "creater": "hnhyhs",
+      "filename": [
+        "a.jpg",
+        "b.jpg"
+      ],
+      "readques_flag": 0,
+      "replytime": "",
+      "reply_info": "",
+      "replyer": "",
+      "canceltime": "",
+      "canceller": "",
+      "cancelflag": 0,
+      "readreplay_flag": 0
+    }
+  ]
+}
+```
+
