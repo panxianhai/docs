@@ -2707,3 +2707,122 @@ Response:
 }
 ```
 
+## 特殊配件订购
+
+### 特殊配件列表
+
+```json
+GET /fitting/specialList
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": [
+    {
+      "dh": "2018022315065162778",
+      "createtime": "2018-02-23 15:06:51",
+      "linkman": "潘大大2",
+      "phone": "18175150335",
+      "address": "我的测试地址",
+      "state": "0",
+      "lists": [
+        {
+          "mc": "配件名称",
+          "sl": "100",
+          "otherinfo": "备注信息"
+        },
+        {
+          "mc": "配件名称2",
+          "sl": "200",
+          "otherinfo": "备注信息2"
+        }
+      ]
+    }
+  ]
+}
+```
+
+### 申请特殊配件
+
+```json
+POST /fitting/addSpecial
+
+Body:
+{
+  "linkman": "潘大大",
+  "phone": "18175150335",
+  "address": "我的测试地址",
+  "fittings": [
+    {
+      "mc": "配件名称",
+      "sl": 100,
+      "otherinfo": "备注信息"
+    },
+    {
+      "mc": "配件名称2",
+      "sl": 200,
+      "otherinfo": "备注信息2"
+    }
+  ]
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 更新申请单
+
+```json
+POST /fitting/updateSpecial
+
+Body:
+{
+  "dh": "20180223998865",
+  "linkman": "潘大大",
+  "phone": "18175150335",
+  "address": "我的测试地址",
+  "fittings": [
+    {
+      "mc": "配件名称",
+      "sl": 100,
+      "otherinfo": "备注信息"
+    },
+    {
+      "mc": "配件名称2",
+      "sl": 200,
+      "otherinfo": "备注信息2"
+    }
+  ]
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
+### 取消申请单
+
+```json
+POST /fitting/deleteSpecial
+
+Body:
+{
+  "dh": "20180223998865"
+}
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {}
+}
+```
+
