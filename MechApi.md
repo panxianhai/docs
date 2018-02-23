@@ -2730,12 +2730,26 @@ Response:
         {
           "mc": "配件名称",
           "sl": "100",
-          "otherinfo": "备注信息"
+          "otherinfo": "备注信息",
+          "spfile": "1.jpg;b.jpg"
         },
         {
           "mc": "配件名称2",
           "sl": "200",
-          "otherinfo": "备注信息2"
+          "otherinfo": "备注信息2",
+          "spfile": "1.jpg;b.jpg"
+        }
+      ],
+      "ready": [
+        {
+          "mc": "配件名称",
+          "sl": "100",
+          "dj": "100.00"
+        },
+        {
+          "mc": "配件名称2",
+          "sl": "200",
+          "dj": "200.00"
         }
       ]
     }
@@ -2757,12 +2771,14 @@ Body:
     {
       "mc": "配件名称",
       "sl": 100,
-      "otherinfo": "备注信息"
+      "otherinfo": "备注信息",
+      "spfile": "1.jpg;b.jpg"
     },
     {
       "mc": "配件名称2",
       "sl": 200,
-      "otherinfo": "备注信息2"
+      "otherinfo": "备注信息2",
+      "spfile": "1.jpg;b.jpg"
     }
   ]
 }
@@ -2790,12 +2806,14 @@ Body:
     {
       "mc": "配件名称",
       "sl": 100,
-      "otherinfo": "备注信息"
+      "otherinfo": "备注信息",
+      "spfile": "1.jpg;b.jpg"
     },
     {
       "mc": "配件名称2",
       "sl": 200,
-      "otherinfo": "备注信息2"
+      "otherinfo": "备注信息2",
+      "spfile": "1.jpg;b.jpg"
     }
   ]
 }
@@ -2823,6 +2841,38 @@ Response:
   "error": 0,
   "message": "success",
   "data": {}
+}
+```
+
+### 申请单详情
+
+```json
+GET /fitting/showSpecial/2018022315065162778
+
+Response:
+{
+  "error": 0,
+  "message": "success",
+  "data": {
+    "dh": "2018022315065162778",
+    "linkman": "潘大大2",
+    "phone": "18175150335",
+    "address": "我的测试地址",
+    "lists": [
+      {
+        "mc": "配件名称",
+        "sl": "100",
+        "otherinfo": "备注信息",
+        "spfile": "a.jpg;b.jpg"
+      },
+      {
+        "mc": "配件名称2",
+        "sl": "200",
+        "otherinfo": "备注信息2",
+        "spfile": "a.jpg;b.jpg"
+      }
+    ]
+  }
 }
 ```
 
