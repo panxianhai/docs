@@ -2861,7 +2861,7 @@ Response:
     "linkman": "潘大大2",
     "phone": "18175150335",
     "address": "我的测试地址",
-    "lists": [
+    "fittings": [
       {
         "mc": "配件名称",
         "sl": "100",
