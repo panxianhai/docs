@@ -2734,13 +2734,19 @@ Response:
           "mc": "配件名称",
           "sl": "100",
           "otherinfo": "备注信息",
-          "spfile": "1.jpg;b.jpg"
+            "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
         },
         {
           "mc": "配件名称2",
           "sl": "200",
           "otherinfo": "备注信息2",
-          "spfile": "1.jpg;b.jpg"
+          "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
         }
       ],
       "ready": [
@@ -2775,13 +2781,19 @@ Body:
       "mc": "配件名称",
       "sl": 100,
       "otherinfo": "备注信息",
-      "spfile": "1.jpg;b.jpg"
+      "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
     },
     {
       "mc": "配件名称2",
       "sl": 200,
       "otherinfo": "备注信息2",
-      "spfile": "1.jpg;b.jpg"
+      "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
     }
   ]
 }
@@ -2810,13 +2822,19 @@ Body:
       "mc": "配件名称",
       "sl": 100,
       "otherinfo": "备注信息",
-      "spfile": "1.jpg;b.jpg"
+      "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
     },
     {
       "mc": "配件名称2",
       "sl": 200,
       "otherinfo": "备注信息2",
-      "spfile": "1.jpg;b.jpg"
+      "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
     }
   ]
 }
@@ -2866,13 +2884,19 @@ Response:
         "mc": "配件名称",
         "sl": "100",
         "otherinfo": "备注信息",
-        "spfile": "a.jpg;b.jpg"
+        "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
       },
       {
         "mc": "配件名称2",
         "sl": "200",
         "otherinfo": "备注信息2",
-        "spfile": "a.jpg;b.jpg"
+        "spfile": [
+                'a.jpg',
+                'b.jpg'
+            ]
       }
     ]
   }
